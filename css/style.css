@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-h1,h2,h3{
+h1,h2,h3,h4{
     margin: 0;
     font-weight: 500;
 }
@@ -22,6 +22,11 @@ h3{
     line-height: 25px;
     color: black;
 }
+h4{
+    font-size: 20px;
+    line-height: 24px;
+    color: #4b4c50
+}
 p{
     font-size: 18px;
     line-height: 21px;
@@ -40,6 +45,9 @@ ul{
     margin: 0;
     padding: 0;
 }
+li{
+    font-size: 18px;
+}
 a{
     text-decoration: none;
 }
@@ -50,7 +58,7 @@ body{
     font-family: var(--font1);
 }
 .main-container{
-    max-width: 1100px;
+    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
     padding: 0 10px;
@@ -143,7 +151,73 @@ body{
     text-align: center;
 }
 .content-screenshot p{
-    margin: 40px 0;
+    width: 745px;
+    margin: 40px auto;
     color: #a0a3a8;
 }
+.screenshot-img{
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+}
+/*************************
+    MAIN-PLANES
+*************************/
+.main-plans{
+    padding: 100px 0;
+}
+.content-plans{ 
+    text-align: center;
+}
+.content-plans p{
+    width: 745px;
+    margin: 20px auto 40px;
+}
+.plans-card-global{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.plans-card-global .plans-card{
+    width: 280px;
+    background-color: #f5fafd;
+    border-radius: 12px;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+}
+.plans-card-global .plans-card h4{
+    padding: 10px 0;
+}
+.plans-card-global .plans-card .price{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
 
+}
+.plans-card .list-plans{
+    width: 205px;
+    list-style-type: none;
+    margin: 25px auto 50px;
+    font-weight: 500;
+    color: #a0a3a8
+    ;
+}
+.plans-card .list-plans li{
+    padding: 5px 0 8px;
+    border-bottom: 1px dashed rgba(160, 163, 168, 0.4);
+}
+.plans-card span{
+    font-size: 16px;
+    color: #a0a3a8;
+    display: block;
+    margin-bottom: 15px;
+}
+.plans-card a{
+    width: 122px;
+    display: inline-block;
+    padding: 11px 0;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    border: solid 2px #747474;
+}
