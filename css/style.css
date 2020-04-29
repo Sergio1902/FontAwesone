@@ -209,9 +209,19 @@ body{
 .description-text .list-description{
     list-style-type: none;
 }
-.description-text .list-description>li{
+.description-text .list-description li{
     margin-bottom: 10px;
 }
+.description-text .list-description>li::before{
+    content: " ";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: #fe6337;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
 /*************************
     MAIN-SCREENSHOT
 *************************/
@@ -233,6 +243,7 @@ body{
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
     display: inline-block;
 }
+
 /*************************
     MAIN-PLANES
 *************************/
@@ -246,6 +257,7 @@ body{
     width: 745px;
     margin: 20px auto 40px;
 }
+
 .plans-card-global{
     display: flex;
     justify-content: space-around;
@@ -253,23 +265,24 @@ body{
 }
 .plans-card-global .plans-card{
     width: 280px;
-    background-color: #f5fafd;
+    background-color: rgb(229, 234, 238);
     border-radius: 12px;
-    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
-    transition: all 0.5;
-
-
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
 }
 .plans-card-global .plans-card h4{
     padding: 10px 0;
 }
-.plans-card-global .plans-card .price{
+.plans-card-global .plans-card .price{   
+    position: relative;
     background-color: white;
+    padding: 30px 0;
+}
+.plans-card-global .plans-card .price .price-text{
+    position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 30px 0;
-    transition: background-color 0.5s;
+    align-items: flex-end;
+    z-index: 9999;
 
 }
 .plans-card .list-plans{
@@ -277,33 +290,92 @@ body{
     list-style-type: none;
     margin: 25px auto 50px;
     font-weight: 500;
-    color: #a0a3a8
-    ;
+    color: #a0a3a8;
 }
 .plans-card .list-plans li{
     padding: 5px 0 8px;
     border-bottom: 1px dashed rgba(160, 163, 168, 0.4);
 }
-.plans-card span{
+.plans-card .star-fre{
     font-size: 16px;
     color: #a0a3a8;
     display: block;
     margin-bottom: 15px;
 }
+
+/* efecto hover */
+.plans-card-global .plans-card .price .price-text sup,
+.plans-card-global .plans-card .price .price-text span{
+    font-size: 20px;
+    line-height: 24px;
+   
+}
+.plans-card-global .plans-card .price::after{
+    content: " ";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-image: linear-gradient(110deg, #fd702c, #f4375c 102%);
+    opacity: 0;
+    
+}
+.plans-card:hover .price::after{
+    opacity: 1;
+}
+.plans-card:hover .price-text h2,
+.plans-card:hover .price-text sup,
+.plans-card:hover .price-text span
+{
+    color: white;
+}
+/* -----------  */
+
 .plans-card a{
+    position: relative;
     width: 122px;
-    display: inline-block;
-    padding: 11px 0;
+    height: 40px;
+    display: block;
+    padding: 7px 0;
     margin-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
     border-radius: 20px;
     border: solid 2px #747474;
     transition: all 0.5s;
+    color: #747474;
+    font-weight: 700;
+}
+.plans-card a>span{
+    position: absolute;
+    display: block;
+    top: 25%;
+    left: 25%;
+    z-index: 9999;
+    
+}
+.plans-card a::after{
+    content: " ";
+    position: absolute;
+    width: 122px;
+    height: 40px;
+    top: -2px;
+    left: -2px;
+    background-image: linear-gradient(110deg, #fd702c, #f4375c 102%);
+    border-radius: 20px;
+    opacity: 0;
+    
 }
 .plans-card:hover{
-    background-color: yellow;
-    transition: all 0.5;
+    background-color: white;
 }
-
+.plans-card:hover a::after{
+    opacity: 1;
+}
+.plans-card:hover a>span{
+    color: white;
+}
 
 /*******************************
     MAIN-CLIENTS
@@ -376,11 +448,17 @@ body{
     padding: 25px;
     border-radius: 12px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+    display: flex;
 }
+.downland-card-global .downland-card>i{
+    font-size: 49px;
+}
+
 .downland-card-global .downland-card span{
     color: #a0a3a8;
     font-size: 16px;
 }
+
 
 /******************************
     MAIN-FOOTER
