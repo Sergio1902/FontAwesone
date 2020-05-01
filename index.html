@@ -37,46 +37,57 @@
         <div class="main-caract">
             <div class="main-container">
                 <div class="caract-card-global">
-                    <div class="caract-card">
-                        <div class="caract-card-text">
-                            <h3>Showcase Your App</h3>
-                            <span>Showcase your app in style with this professional looking template</span>
-                        </div>
-                    </div>
-                    <div class="caract-card">
-                        <div class="caract-card-text">
-                            <h3>Easy to Customize</h3>
-                            <span>Easily customize the text and replace the  images to suit your own app. </span>
-                        </div>
-                    </div>
-                    <div class="caract-card">
-                        <div class="caract-card-text">
-                            <h3>Unlimited Colors</h3>
-                            <span>Easily change the colors in CSS that can go well with your branding.</span>
-                        </div>
-                    </div>
-                    <div class="caract-card">
-                        <div class="caract-card-text">
-                            <h3>Responsive, HTML5, CSS3</h3>
-                            <span>Our template is 100% responsive and built with modern standards.</span>
-                        </div>
-                    </div>
-                    <div class="caract-card">
-                        <div class="caract-card-text">
-                            <h3>Designed to Convert</h3>
-                            <span>Designed to engage your user and increase your conversion.</span>
-                        </div>
-                    </div>
-                    <div class="caract-card">
-                        <div class="caract-card-text">
-                            <h3>With no Boundaries</h3>
-                            <span>Use Bootstrap and PaperKit to add additional components.</span>
-                        </div>
-                    </div>
-    
+                    <ul id="autoWidth2" class="cs-hidden">
+                        <li class="item-q">
+                            <div class="caract-card">
+                                <div class="caract-card-text">
+                                    <h3>Showcase Your App</h3>
+                                    <span>Showcase your app in style with this professional looking template</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-w">
+                            <div class="caract-card">
+                                <div class="caract-card-text">
+                                    <h3>Easy to Customize</h3>
+                                    <span>Easily customize the text and replace the  images to suit your own app. </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-e">
+                            <div class="caract-card">
+                                <div class="caract-card-text">
+                                    <h3>Unlimited Colors</h3>
+                                    <span>Easily change the colors in CSS that can go well with your branding.</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-r">
+                            <div class="caract-card">
+                                <div class="caract-card-text">
+                                    <h3>Responsive, HTML5, CSS3</h3>
+                                    <span>Our template is 100% responsive and built with modern standards.</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-t">
+                            <div class="caract-card">
+                                <div class="caract-card-text">
+                                    <h3>Designed to Convert</h3>
+                                    <span>Designed to engage your user and increase your conversion.</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-y">
+                            <div class="caract-card">
+                                <div class="caract-card-text">
+                                    <h3>With no Boundaries</h3>
+                                    <span>Use Bootstrap and PaperKit to add additional components.</span>
+                                </div>
+                            </div>
+                        </li>     
+                    </ul>
                 </div>
-    
-    
             </div>
         </div>
 
@@ -209,7 +220,7 @@
                     <p>Real user testimonials are great way to attract new customers and increase their trust into using your app.Replace the testimonials below with the ones for your own app.</p>
                 </div>
                 <div class="clients-card-global">
-                    <ul id="autoWidth" class="cs-hidden">
+                    <ul id="autoWidth">
                         <li class="item-a">
                             <div class="card-clients">
                                 <p>Awesome App is awesome and I can’t image working on my projects without it.
@@ -261,56 +272,6 @@
                     </ul>
                 </div>
             </div>
-
-
-
-
-
-                <!-- <div class="clients-card-global">
-                    <div class="card-clients">
-                        <p>Awesome App is awesome and I can’t image working on my projects without it.
-                        It has saved me countless hours of time
-                        and has increased my productivity.</p>
-                        <div class="clients-testimonial">
-                            <figure>
-                                <img src="img/clients/clients1.jpg" alt="">
-                            </figure>
-                            <div class="testimonial">
-                                <h5>Patrick Harry</h5>
-                                <span>Web Developer</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-clients">
-                        <p>Awesome App is awesome and I can’t image working on my projects without it.
-                        It has saved me countless hours of time
-                        and has increased my productivity.</p>
-                        <div class="clients-testimonial">
-                            <figure>
-                                <img src="img/clients/clients2.jpg" alt="">
-                            </figure>
-                            <div class="testimonial">
-                                <h5>Andrew Riley</h5>
-                                <span>Web Developer</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-clients">
-                        <p>Awesome App is awesome and I can’t image working on my projects without it.
-                        It has saved me countless hours of time
-                        and has increased my productivity.</p>
-                        <div class="clients-testimonial">
-                            <figure>
-                                <img src="img/clients/clients3.jpg" alt="">
-                            </figure>
-                            <div class="testimonial">
-                                <h5>Ralph Jordan</h5>
-                                <span>Web Developer</span>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-            
         </section>
 
         <section class="main-downland">
@@ -368,13 +329,32 @@
     <script src="pluging/js/lightslider.min.js"></script>
     <script>
          $(document).ready(function() {
+
             $('#autoWidth').lightSlider({
-                autoWidth:true,
-                loop:true,
-                onSliderLoad: function() {
-                    $('#autoWidth').removeClass('cS-hidden');
-                } 
+                item:3,
+                loop:false,
+                slideMove:1,
+                easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+                speed:600,
+                responsive : [
+                    {
+                        breakpoint:1200,
+                        settings: {
+                            item:2,
+                            slideMove:1,
+                            slideMargin:6,
+                        }
+                    },
+                    {
+                        breakpoint:900,
+                        settings: {
+                            item:1,
+                            slideMove:1
+                        }
+                    }
+                ]
             });  
+
         });
     </script>
 

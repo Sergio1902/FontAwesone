@@ -242,7 +242,6 @@ body{
     margin: 40px 0 0;
     color: #a0a3a8;
 }
-
 .main-screenshot{
     background-color: #f5fafd;
     padding: 100px 0;
@@ -395,6 +394,11 @@ body{
 .main-clients{
     padding: 20px 0 100px;
 }
+#autoWidth li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .clients-card-global{
     margin-top: 60px;
     display: flex;
@@ -408,8 +412,8 @@ body{
     border-radius: 12px;
     box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
-    margin-right: 10px;
 }
+
 .clients-card-global .card-clients>p{
     color: #a0a3a8;
     margin-bottom: 16px;
@@ -490,8 +494,8 @@ body{
 /*****************************
     MEDIA - QUERY
 *****************************/
-
 @media screen and (max-width:1200px) {
+
 
     .main-screenshot{
         padding: 70px 40px;
@@ -505,10 +509,9 @@ body{
     .main-downland{
         padding: 70px 40px;
     }
-
     .content-description .description-text{
         padding: 40px 20px;
-      }
+    }
 }
 @media screen and (max-width:992px) {
 
@@ -516,12 +519,9 @@ body{
         font-size: 35px;
         line-height: 40px;
     }
-
     .title p{
         margin: 20px 0 0;
     }
-
-    
     .hero-banner-text p{
         font-size: 16px;
         line-height: 20px;
@@ -529,7 +529,6 @@ body{
     .hero-banner-text .list-hero-banner li{
         font-size: 15px;
     }
-
     .content-description{
         flex-direction: column;
     }
@@ -565,7 +564,6 @@ body{
     li{
         font-size: 15px;
     }
-
     .content-hero-banner{
         flex-direction: column;
         text-align: center;
@@ -580,25 +578,19 @@ body{
     .content-hero-banner{
         height: 500px;
     }
-
     .content-description .description-text .list-description{
         text-align: center; 
     }
-
     .plans-card-global .plans-card{
         max-width: 270px;
         width: 100%;
     }
-
     .downland-card-global{
         flex-direction: column;
     }
     .downland-card-global .downland-card{
         width: 100%;
-    }
-
-
-    
+    }   
 }
 @media screen and (max-width:500px){
 
@@ -622,14 +614,9 @@ body{
         line-height: 20px;
         color: black;
     }
-  
-
     .title{
         padding: 0 0;
     }
-
-
-
     .plans-card-global .plans-card{
         max-width: 270px;
         width: 100%;
