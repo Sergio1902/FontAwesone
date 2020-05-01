@@ -49,6 +49,7 @@ img{
 ul{
     margin: 0;
     padding: 0;
+    list-style-type: none;
 }
 li{
     font-size: 18px;
@@ -394,7 +395,6 @@ body{
 .main-clients{
     padding: 20px 0 100px;
 }
-
 .clients-card-global{
     margin-top: 60px;
     display: flex;
@@ -403,12 +403,12 @@ body{
 }
 .clients-card-global .card-clients{
     max-width: 380px;
-    width: 31.67%;
     background-color: #f5fafd;
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
+    margin-right: 10px;
 }
 .clients-card-global .card-clients>p{
     color: #a0a3a8;
@@ -426,7 +426,6 @@ body{
     color: #a0a3a8;
     margin-top: 6px;
 }
-
 /*******************************
     MAIN-DOWNLAND
 *******************************/
@@ -590,15 +589,6 @@ body{
         max-width: 270px;
         width: 100%;
     }
-
-    .clients-card-global {
-        flex-direction: column;
-    }
-    .clients-card-global .card-clients{
-        max-width: 380px;
-        width: 100%;
-    }
-
 
     .downland-card-global{
         flex-direction: column;
