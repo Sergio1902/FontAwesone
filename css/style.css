@@ -81,18 +81,25 @@ body{
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    padding: 0 25px;
 }
 .hero-banner-text{
     width: 50%;
     color: white;
 }
+
 .hero-banner-text .list-hero-banner{
     list-style-type: none;
     margin: 22px 0 32px;
     font-weight: 400;
 }
-.hero-banner-text .list-hero-banner>li{
+.hero-banner-text .list-hero-banner li{
     margin-bottom: 10px;
+}
+.hero-banner-text .list-hero-banner li>i{
+    font-size: 15px;
+    margin-right:10px ;
+
 }
 .hero-banner-text .btn{
     display: inline-block;
@@ -105,12 +112,14 @@ body{
 /*****************************
     MAIN-CARACTERES
 *****************************/
+.main-caract{
+    padding: 50px;
+}
 .caract-card-global{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    margin: 100px 0;
 }
 .caract-card{
     width: 340px;
@@ -192,39 +201,47 @@ body{
 /*****************************
     MAIN-DESCRIPTION
 *****************************/
+
 .main-description{
-    padding: 50px 0 0;
+    padding-top: 50px;
 }
 .content-description{
     display: flex;
 }
 .content-description .description-text{
   width: 60%;
-  padding: 40px 70px;
+  padding: 50px 70px;
   color: #a0a3a8;
 }
 .content-description .description-text p{
-    margin: 12px 0;
+    margin-top: 10px;
 }
 .description-text .list-description{
     list-style-type: none;
+    margin-top: 20px;
 }
 .description-text .list-description li{
     margin-bottom: 10px;
 }
-.description-text .list-description>li::before{
-    content: " ";
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    background-color: #fe6337;
+.description-text .list-description li>i{
+    color: #f4583b;
     margin-right: 10px;
-    border-radius: 50%;
 }
 
 /*************************
     MAIN-SCREENSHOT
 *************************/
+.title{
+    text-align: center;
+    max-width: 745px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+.title p{
+    margin: 40px 0 0;
+    color: #a0a3a8;
+}
+
 .main-screenshot{
     background-color: #f5fafd;
     padding: 100px 0;
@@ -232,16 +249,12 @@ body{
 .content-screenshot{
     text-align: center;
 }
-.content-screenshot p{
-    width: 745px;
-    margin: 40px auto;
-    color: #a0a3a8;
-}
 .screenshot-img{
     overflow: hidden;
     border-radius: 12px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
     display: inline-block;
+    margin-top: 60px;
 }
 
 /*************************
@@ -253,21 +266,20 @@ body{
 .content-plans{ 
     text-align: center;
 }
-.content-plans p{
-    width: 745px;
-    margin: 20px auto 40px;
-}
-
 .plans-card-global{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    margin-top: 60px;
 }
 .plans-card-global .plans-card{
-    width: 280px;
+    max-width: 270px;
+    width: 22.5%;
     background-color: rgb(229, 234, 238);
     border-radius: 12px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
 }
 .plans-card-global .plans-card h4{
     padding: 10px 0;
@@ -283,10 +295,9 @@ body{
     justify-content: center;
     align-items: flex-end;
     z-index: 9999;
-
 }
 .plans-card .list-plans{
-    width: 205px;
+    max-width: 205px;
     list-style-type: none;
     margin: 25px auto 50px;
     font-weight: 500;
@@ -381,17 +392,9 @@ body{
     MAIN-CLIENTS
 *******************************/
 .main-clients{
-    padding: 100px 0;
+    padding: 20px 0 100px;
 }
-.title{
-    text-align: center;
-    width: 745px;
-    margin: 0 auto;
-}
-.title p{
-    margin: 20px 0;
-    color: #a0a3a8;
-}
+
 .clients-card-global{
     margin-top: 60px;
     display: flex;
@@ -400,10 +403,12 @@ body{
 }
 .clients-card-global .card-clients{
     max-width: 380px;
+    width: 31.67%;
     background-color: #f5fafd;
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 .clients-card-global .card-clients>p{
     color: #a0a3a8;
@@ -428,9 +433,6 @@ body{
 .main-downland{
     background-image: linear-gradient(101deg, #fd702c, #f4375c 102%);
 }
-.content-downland{
-    padding: 80px 0;
-}
 .content-downland>h2{
     text-align: center;
     margin-bottom: 45px;
@@ -438,28 +440,29 @@ body{
 }
 .downland-card-global{
     display: flex;
-    align-items: center;
     justify-content: space-around;
+    align-items: center;
 }
 .downland-card-global .downland-card{
     max-width: 340px;
-    width: 100%;
+    width: 28.33%;
     background-color: white;
-    padding: 25px;
+    padding: 20px;
     border-radius: 12px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
     display: flex;
+    margin-bottom: 20px;
 }
 .downland-card-global .downland-card>i{
-    font-size: 49px;
+    font-size: 53px;
+    color: #888888;
+    margin-right: 20px;
 }
 
 .downland-card-global .downland-card span{
     color: #a0a3a8;
     font-size: 16px;
 }
-
-
 /******************************
     MAIN-FOOTER
 ******************************/
@@ -483,4 +486,163 @@ body{
 }
 .content-footer span{
     color:#a0a3a8;
+}
+
+/*****************************
+    MEDIA - QUERY
+*****************************/
+
+@media screen and (max-width:1200px) {
+
+    .main-screenshot{
+        padding: 70px 40px;
+    }
+    .main-plans{
+        padding: 70px 40px;
+    }
+    .main-clients{
+        padding: 70px 40px;
+    }
+    .main-downland{
+        padding: 70px 40px;
+    }
+
+    .content-description .description-text{
+        padding: 40px 20px;
+      }
+}
+@media screen and (max-width:992px) {
+
+    h1{
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .title p{
+        margin: 20px 0 0;
+    }
+
+    
+    .hero-banner-text p{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .hero-banner-text .list-hero-banner li{
+        font-size: 15px;
+    }
+
+    .content-description{
+        flex-direction: column;
+    }
+    .content-description .description-text{
+        order: 1;
+        text-align: center;
+        width: 100%;
+    }
+    .content-description .description-text p{
+        max-width: 600px;
+       margin-left: auto;
+       margin-right: auto;
+    }
+    .content-description .description-text .list-description{
+        text-align: left;
+        max-width: 460px;
+        margin-left: auto;
+        margin-right: auto;   
+    }
+    .content-description .description-img{
+        order: 2;
+        width: 350px;
+        margin: 0 auto;
+    } 
+
+}
+@media screen and (max-width:768px) {
+
+    p{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    li{
+        font-size: 15px;
+    }
+
+    .content-hero-banner{
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-banner-text{     
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .content-hero-banner .hero-banner-img{
+        display: none;
+    }
+    .content-hero-banner{
+        height: 500px;
+    }
+
+    .content-description .description-text .list-description{
+        text-align: center; 
+    }
+
+    .plans-card-global .plans-card{
+        max-width: 270px;
+        width: 100%;
+    }
+
+    .clients-card-global {
+        flex-direction: column;
+    }
+    .clients-card-global .card-clients{
+        max-width: 380px;
+        width: 100%;
+    }
+
+
+    .downland-card-global{
+        flex-direction: column;
+    }
+    .downland-card-global .downland-card{
+        width: 100%;
+    }
+
+
+    
+}
+@media screen and (max-width:500px){
+
+    h2{
+        font-size: 30px;
+        line-height: 35px;
+        color: black;
+    }
+    h3{
+        font-size: 18px;
+        line-height: 20px;
+        color: black;
+    }
+    h4{
+        font-size: 17px;
+        line-height: 20px;
+        color: #4b4c50
+    }
+    h5{
+        font-size: 16px;
+        line-height: 20px;
+        color: black;
+    }
+  
+
+    .title{
+        padding: 0 0;
+    }
+
+
+
+    .plans-card-global .plans-card{
+        max-width: 270px;
+        width: 100%;
+    }
+
 }
