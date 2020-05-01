@@ -394,11 +394,13 @@ body{
 .main-clients{
     padding: 20px 0 100px;
 }
+/*** cada card por separado **/
 #autoWidth li{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+/*** ***/
 .clients-card-global{
     margin-top: 60px;
     display: flex;
@@ -406,12 +408,15 @@ body{
     align-items: center;
 }
 .clients-card-global .card-clients{
-    max-width: 380px;
+    width: 380px;
     background-color: #f5fafd;
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
+}
+.clients-card-global .card-clients:not(:last-child){
+    margin-right: 10px;
 }
 
 .clients-card-global .card-clients>p{
