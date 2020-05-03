@@ -4,16 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fontawesone</title>
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <!-- Google Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+        <!-- Bootstrap core CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/css/mdb.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="pluging/css/lightslider.css">
-    <link rel="stylesheet" href="css/style.css">
+    
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/linearicons.css">
-    
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
     <main>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.png" height="30" class="d-inline-block align-top"
+                      alt="mdb logo"> AWESONE APP
+                </a>
+                <ul class="btn-downland ml-auto">
+                    <li class="rodeado">
+                        <a href="" >
+                            DOWNLAND NOW
+                        </a> 
+                    </li>
+                </ul> 
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">FEATURES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">PRICING</a>
+                            </li>
+                            <li class="nav-item rodeado">
+                                <a class="nav-link" href="#">DOWNLAND NOW</a>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+        </nav>
+    
         <section class="main-hero-banner">
             <div class="main-container">
                 <div class="content-hero-banner">
@@ -228,7 +276,7 @@
                                 and has increased my productivity.</p>
                                 <div class="clients-testimonial">
                                     <figure>
-                                        <img src="img/clients/clients1.jpg" alt="">
+                                        <img src="img/clients/clients1.png" alt="">
                                     </figure>
                                     <div class="testimonial">
                                         <h5>Patrick Harry</h5>
@@ -244,7 +292,7 @@
                                 and has increased my productivity.</p>
                                 <div class="clients-testimonial">
                                     <figure>
-                                        <img src="img/clients/clients2.jpg" alt="">
+                                        <img src="img/clients/clients2.png" alt="">
                                     </figure>
                                     <div class="testimonial">
                                         <h5>Andrew Riley</h5>
@@ -260,7 +308,7 @@
                                 and has increased my productivity.</p>
                                 <div class="clients-testimonial">
                                     <figure>
-                                        <img src="img/clients/clients3.jpg" alt="">
+                                        <img src="img/clients/clients3.png" alt="">
                                     </figure>
                                     <div class="testimonial">
                                         <h5>Ralph Jordan</h5>
@@ -279,27 +327,27 @@
                 <div class="content-downland">
                     <h2>Download Awesome App Now</h2>
                     <div class="downland-card-global">
-                        <div class="downland-card">
+                        <a class="downland-card" href="https://www.apple.com/la/ios/app-store/">
                             <i class="fab fa-apple"></i>
                             <div class="downland-card-text">
                                 <h5>Download</h5>
                                 <span>Download from App Store</span>
                             </div>
-                        </div>
-                        <div class="downland-card">
+                        </a>
+                        <a class="downland-card" href="https://play.google.com/store/apps?hl=es_PE">
                             <i class="fab fa-android"></i>
                             <div class="downland-card-text">
                                 <h5>Download</h5>
                                 <span>Download from Play Store</span>
                             </div>
-                        </div>
-                        <div class="downland-card">
+                        </a>
+                        <a class="downland-card" href="https://play.google.com/store?hl=es">
                             <i class="fab fa-windows"></i>
                             <div class="downland-card-text">
                                 <h5>Download</h5>
                                 <span>Download from Microsoft Store</span>
                             </div>    
-                        </div>
+                        </a>
                     </div>
                 </div>
 
@@ -325,7 +373,16 @@
     </main>
 
     <script src="https://kit.fontawesome.com/0f83311815.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    
+    <!-- CND JQuery -->  
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/js/mdb.min.js"></script>
+
     <script src="pluging/js/lightslider.min.js"></script>
     <script>
          $(document).ready(function() {
