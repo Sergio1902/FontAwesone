@@ -129,7 +129,7 @@ body{
     background-image: linear-gradient(109deg, #fd702c 0%, #f4375c 102%);
 }
 .content-hero-banner{
-    height: 600px;
+    height: 700px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -256,7 +256,7 @@ body{
 *****************************/
 
 .main-description{
-    padding-top: 50px;
+    padding-top: 80px;
 }
 .content-description{
     display: flex;
@@ -313,7 +313,7 @@ body{
     MAIN-PLANES
 *************************/
 .main-plans{
-    padding: 100px 0;
+    padding: 100px 0 20px;
 }
 .content-plans{ 
     text-align: center;
@@ -328,7 +328,7 @@ body{
 .plans-card-global .plans-card{
     max-width: 270px;
     width: 22.5%;
-    background-color: rgb(229, 234, 238);
+    background-color: #f5fafd;
     border-radius: 12px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
@@ -442,7 +442,7 @@ body{
     MAIN-CLIENTS
 *******************************/
 .main-clients{
-    padding: 20px 0 100px;
+    padding: 100px 0 100px;
 }
 /*** cada card por separado **/
 #autoWidth li{
@@ -519,10 +519,10 @@ body{
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
     display: flex;
     margin-bottom: 20px;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease;
 }
 .downland-card-global .downland-card>i{
-    font-size: 53px;
+    font-size: 50px;
     color: #888888;
     margin-right: 20px;
 }
@@ -532,9 +532,9 @@ body{
     font-size: 16px;
 }
 .downland-card-global .downland-card:hover{
-    position: relative;
-    transition: all 0.5s ease-in-out;
-    top: -10px;
+    transform: translateY(-10px);
+    box-shadow: 0 6px 5px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
     
 }
 
@@ -575,7 +575,7 @@ body{
         padding: 70px 40px;
     }
     .main-plans{
-        padding: 70px 40px;
+        padding: 70px 0 20px;
     }
     .main-clients{
         padding: 70px 40px;
@@ -591,6 +591,9 @@ body{
 
     .btn-downland{
         display: initial;
+    }
+    .down{
+        display: none;
     }
     h1{
         font-size: 35px;
@@ -636,6 +639,14 @@ body{
     } 
 
 }
+@media screen and (max-width:900px) {
+    .downland-card-global{
+        flex-direction: column;
+    }
+    .downland-card-global .downland-card{
+        width: 100%;
+    }
+}
 @media screen and (max-width:768px) {
 
     p{
@@ -664,12 +675,7 @@ body{
         max-width: 270px;
         width: 100%;
     }
-    .downland-card-global{
-        flex-direction: column;
-    }
-    .downland-card-global .downland-card{
-        width: 100%;
-    }   
+       
 }
 @media screen and (max-width:500px){
 
@@ -700,5 +706,6 @@ body{
         max-width: 270px;
         width: 100%;
     }
+
 
 }
